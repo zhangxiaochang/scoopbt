@@ -11,5 +11,5 @@
   "pre_install": [
     "Invoke-ExternalCommand \"$dir\\sogou_pinyin_139.exe\" -ArgumentList '-s' -RunAs | Out-Null",
     "Remove-Item \"$dir\\sogou_pinyin_139.exe\" | Out-Null"
-  ],
+  ]
 }
