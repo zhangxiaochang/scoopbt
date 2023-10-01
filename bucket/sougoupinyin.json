@@ -6,7 +6,7 @@
     "identifier": "Freeware"
   },
   "description": "sougoupinyin",
-  "url": "https://ime-sec.gtimg.com/202310012342/d34b4bcd564727f77fcc72ce09f5d2ee/pc/dl/gzindex/1695112570/sogou_pinyin_139.exe?f=pinyinbanner&dcs=872676db3b086f29c41228c9866ca990",
+  "url": "https://pan.tenire.com/down.php/c293b6463b90a86808ff9470e582f01a.exe",
   "hash": "3c59c31813bc6a988b363fddac0d087e5fc6cbde595da369917ea887ced4f4ff",
   "pre_install": [
     "Invoke-ExternalCommand \"$dir\\sogou_pinyin_139.exe\" -ArgumentList '-s' -RunAs | Out-Null",
