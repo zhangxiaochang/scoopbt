@@ -11,5 +11,8 @@
   "pre_install": [
     "Invoke-ExternalCommand \"$dir\\c293b6463b90a86808ff9470e582f01a.exe\" -ArgumentList '-silent' -RunAs | Out-Null",
     "Remove-Item \"$dir\\sogou_pinyin_139.exe\" | Out-Null"
-  ]
+  ],
+  "uninstaller": {
+  "script": "Invoke-ExternalCommand 'C:\\Program Files (x86)\\SogouInput\\13.9.0.8319\\Uninstall\\Uninstall.exe' -ArgumentList '-silent'  -RunAs | Out-Null"
+  }
 }
