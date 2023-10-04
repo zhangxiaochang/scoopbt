@@ -9,7 +9,7 @@
   "url": "https://pan.tenire.com/down.php/c293b6463b90a86808ff9470e582f01a.exe",
   "hash": "3c59c31813bc6a988b363fddac0d087e5fc6cbde595da369917ea887ced4f4ff",
   "pre_install": [
-    "$dir\\c293b6463b90a86808ff9470e582f01a.exe /S /D=$dir"
+    "Invoke-ExternalCommand \"$dir\\c293b6463b90a86808ff9470e582f01a.exe\" -ArgumentList '/S /D=E:\\Software\\sougou1' -RunAs | Out-Null",
   ],
   "uninstaller": {
   "script": "Invoke-ExternalCommand 'C:\\Program Files (x86)\\SogouInput\\13.9.0.8319\\Uninstall\\Uninstall.exe' -ArgumentList '-silent'  -RunAs | Out-Null"
