@@ -9,6 +9,6 @@
   "url": "https://pan.tenire.com/down.php/c293b6463b90a86808ff9470e582f01a.exe",
   "hash": "3c59c31813bc6a988b363fddac0d087e5fc6cbde595da369917ea887ced4f4ff",
    "installer": {
-    "script": "Invoke-ExternalCommand \"$dir\\c293b6463b90a86808ff9470e582f01a.exe\" /S -RunAs | Out-Null"
+    "script": "Invoke-ExternalCommand \"$dir\\c293b6463b90a86808ff9470e582f01a.exe\" /SILENT -RunAs | Out-Null"
   }
 }
