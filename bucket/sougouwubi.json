@@ -1,0 +1,17 @@
+{
+  "##": "This package is not in the official buckets because the uninstaller cannot be silent.",
+  "homepage": "https://shurufa.sogou.com/",
+  "version": "5.5",
+   "license": {
+    "identifier": "Freeware"
+  },
+  "description": "sougouwubi",
+  "url": "https://pan.tenire.com/down.php/39a14cf98ea94b0e3f9fa892152c929d.exe",
+  "hash": "3c59c31813bc6a988b363fddac0d087e5fc6cbde595da369917ea887ced4f4ff",
+   "post_install": {
+    "script":"& \"$dir\\39a14cf98ea94b0e3f9fa892152c929d.exe\" /S /D=\"$dir\\sougouInput\""
+  },
+  "uninstaller": {
+    "script":"& \"$dir\\5.5\\Uninstall\\Uninstall.exe\" /S "
+  }
+}
