@@ -1,0 +1,25 @@
+{
+    "version": "1.7.6",
+    "description": "开源云照片存储",
+    "homepage": "https://github.com/ente-io/photos-desktop",
+    "url": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.6/ente-1.7.6-x64.exe#/dl.7z",
+    "hash": "a161e3962c7ab2fb146c87a51cc7f3b5f1bf73ed1d57af51265ec5118fc55d4e",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/ente-io/photos-desktop"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ente-io/photos-desktop/releases/download/v$version/ente-v$version-x64.exe#/dl.7z"
+    },
+    "shortcuts": [
+        [
+            "ente.exe",
+            "ente"
+        ]
+    ]
+}
