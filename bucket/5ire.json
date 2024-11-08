@@ -1,0 +1,25 @@
+{
+    "version": "0.8.0",
+    "description": "跨平台LLMs桌面客户端 ",
+    "homepage": "https://github.com/nanbingxyz/5ire",
+    "url": "https://github.com/nanbingxyz/5ire/releases/download/v0.8.0/5ire-Setup-0.8.0.exe#/dl.7z",
+    "hash": "a161e3962c7ab2fb146c87a51cc7f3b5f1bf73ed1d57af51265ec5118fc55d4e",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+        ]
+    },
+    "checkver": {
+        "github": "https://github.com/nanbingxyz/5ire"
+    },
+    "autoupdate": {
+        "url": "https://github.com/nanbingxyz/5ire/releases/download/v$version/5ire-Setup-v$version.exe#/dl.7z"
+    },
+    "shortcuts": [
+        [
+            "5ire.exe",
+            "5ire"
+        ]
+    ]
+}
