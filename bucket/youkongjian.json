@@ -1,0 +1,19 @@
+{
+    "version": "8.0.0",
+    "description": "友空间",
+    "homepage": "https://ec.diwork.com/",
+    "url": "https://www.now61.com/f/kjBBTy/esn.exe#/dl.7z",
+    "hash": "a161e3962c7ab2fb146c87a51cc7f3b5f1bf73ed1d57af51265ec5118fc55d4e",
+    "installer": {
+        "script": [
+            "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall*\" -Force -Recurse"
+        ]
+    },
+    "shortcuts": [
+        [
+            "YonZone.exe",
+            "YonZone"
+        ]
+    ]
+}
